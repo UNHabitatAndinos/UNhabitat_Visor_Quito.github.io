@@ -140,17 +140,44 @@
         <b>Seleccione indicador:</b>
         <div class="custom-select">
         <select name="layers" onclick= 'changeIndi(this);'>
+            <optgroup label="Vivienda"></optgroup>
+            <option id="MAT_ADE" value="MAT_ADE">Vivienda adecuada</option>
+            <option id="ESP_VIT" value="ESP_VIT">Espacio vital suficiente</option>
+            <option id="A_ACU" value="A_ACU">Acceso a agua mejorada</option>
+            <option id="A_ALC" value="A_ALC">Acceso a saneamiento</option>   
+            <option id="A_ELEC" value="A_ELEC">Acceso a electricidad</option> 
+            <option id="D_ECONO" value="D_ECONO">Dependencia económica</option>
+            </optgroup>
             <optgroup label="Salud"></optgroup>
             <option id="DxP_Salud" value="DxP_Salud">Proximidad centros salud</option>
             <option id="PM10" value="PM10">Concentración de Pm10</option>
+            <option id="CON_SOL" value="CON_SOL">Contaminación de residuos sólidos</option>
             </optgroup>
             <optgroup label="Educación, cultura y diversidad"></optgroup>
+            <option id="DxP_Cult" value="DxP_Cult">Proximidad equipamientos culturales</option>
             <option id="DxP_Educa" value="DxP_Educa">Proximidad equipamientos educativos</option>
+            <option id="MIX_TENE" value="MIX_TENE">Diversidad tenencia</option> 
+            <option id="MIX_EDU" value="MIX_EDU">Diversidad nivel educativo</option> 
+            <option id="MIX_EDAD" value="MIX_EDAD">Diversidad edades</option> 
+            <option id="MIX_ETNIA" value="MIX_ETNIA">Diversidad etnias y razas</option> 
+            <option id="BRECHA_E" value="BRECHA_E">Brecha de género años promedio educación</option>
+            <option id="ESC_ANOS" value="ESC_ANOS">Años promedio educación</option>
             </optgroup>
             <optgroup label="Espacios públicos, seguridad, recreación"></optgroup>
             <option id="DxP_Parqu" value="DxP_Parqu">Proximidad espacio público</option>  
-            <option id="DenPob2019" value="DenPob2019">Densidad poblacional</option> 
-            </optgroup>          
+            <option id="M2_EP_CA" value="M2_EP_CA">M² per capita de espacio público</option> 
+            <option id="Densid2020" value="Densid2020" selected>Densidad poblacional</option> 
+            <option id="Tasa_Hurto" value="Tasa_Hurto">Tasa de hurtos</option>
+            <option id="Tasa_Homic" value="Tasa_Homic">Tasa de homicidios</option>
+            <option id="Shannon" value="Shannon">Diversidad usos del suelo</option>
+            </optgroup> 
+            <optgroup label="Oportunidades económicas"></optgroup>
+            <option id="DxP_Comer" value="DxP_Comer">Proximidad unidades de servicios y comerciales</option>
+            <option id="T_DESEMP" value="T_DESEMP">Tasa de desempleo</option>
+            <option id="EMPLEO" value="EMPLEO">Empleo</option>
+            <option id="DESEM_JUVE" value="DESEM_JUVE">Desempleo juvenil</option>   
+            <option id="BRECHA_D" value="BRECHA_D">Brecha de género desempleo</option>
+            </optgroup> 
         </select>
     </div>
     </div>
