@@ -39,7 +39,7 @@ info.onAdd = function (map) {
 info.update = function (props) {
     this._div.innerHTML = (props ?
         'Parroquia ' + props.PARROQUIA + '<br />' + 
-        'Proyección población ' + props.Pob2020_Pr.toFixed(0)  + '<br />' +  '<br />' + 
+        'Proyección población 2020 ' + props.Pob2020_Pr.toFixed(0)  + '<br />' +  '<br />' + 
         
         '<b>Vivienda </b>' + '<br />' +
         'Vivienda adecuada: ' + props.MAT_ADE.toFixed(0) + ' %' + '<br />' +
@@ -177,7 +177,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>2001 - 3942</div>',
         elem6: '<br />Factor de inclinación del terreno <br />A nivel: 1<br /> Ligeramente inclinada: 1.25<br /> Moderadamente inclinada: 1.5<br /> Fuertemente inclinada: 1.75<br /> Escarpada: 2<br />',
         elem7: '',
-        elem8: "Gobierno Abierto de Quito",
+        elem8: "Gobierno Abierto de Quito 2020",
     },
     DxP_Educa: {
         title: "Proximidad equipamientos de educación",
@@ -189,7 +189,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>801 - 1882</div>',
         elem6: '<br />Factor de inclinación del terreno <br />A nivel: 1<br /> Ligeramente inclinada: 1.25<br /> Moderadamente inclinada: 1.5<br /> Fuertemente inclinada: 1.75<br /> Escarpada: 2<br />',
         elem7: '',
-        elem8: "Gobierno Abierto de Quito",
+        elem8: "Gobierno Abierto de Quito 2020",
     },
     DxP_Parqu: {
         title: "Proximidad espacio público",
@@ -201,7 +201,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>801 - 1812</div>',
         elem6: '<br />Factor de inclinación del terreno <br />A nivel: 1<br /> Ligeramente inclinada: 1.25<br /> Moderadamente inclinada: 1.5<br /> Fuertemente inclinada: 1.75<br /> Escarpada: 2<br />',
         elem7: '',
-        elem8: "Gobierno Abierto de Quito",
+        elem8: "Gobierno Abierto de Quito 2020",
     },
     PM10: {
         title: "Concentración Pm10",
@@ -213,7 +213,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>45 - 46</div>',
         elem6: ' ',
         elem7: ' ',
-        elem8: "Gobierno Abierto de Quito",
+        elem8: "Secretaría de Ambiente de Quito Red Metropolitana de Monitoreo Ambiental REMMAQ 2020",
     },
     MAT_ADE: {
         title: "Vivienda adecuada",
@@ -309,7 +309,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>10001 - 24370</div>',
         elem6: '<br />Factor de inclinación del terreno <br />A nivel: 1<br /> Ligeramente inclinada: 1.25<br /> Moderadamente inclinada: 1.5<br /> Fuertemente inclinada: 1.75<br /> Escarpada: 2<br />',
         elem7: '',
-        elem8: "Gobierno Abierto de Quito",
+        elem8: "Gobierno Abierto de Quito 2020",
     },
     MIX_TENE: {
         title: "Diversidad tenencia",
@@ -393,11 +393,11 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>0 - 2</div>',
         elem6: '',
         elem7: '',
-        elem8: "Gobierno Abierto de Quito",
+        elem8: "Gobierno Abierto de Quito 2020",
     },
     Densid2020: {
         title: "Densidad residencial",
-        subtitle: "Población proyectada x hectárea", 
+        subtitle: "Población proyectada año 2020 x hectárea", 
         elem1: '<div><span  style= "color:#1a9641">▉</span>0 - 146</div>',
         elem2: '<div><span  style= "color:#a6d96a">▉</span>147 - 353</div>', 
         elem3: '<div><span  style= "color:#f4f466">▉</span>354 - 645</div>',
@@ -405,7 +405,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>1831 - 4593</div>',
         elem6: '',
         elem7: '',
-        elem8: "INEC 2020",
+        elem8: "INEC Censo de Población y Vivienda 2010",
     },
     Tasa_Hurto: {
         title: "Tasa de hurtos",
@@ -417,7 +417,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>2357.1 - 4856.9</div>',
         elem6: '',
         elem7: '',
-        elem8: "Observatorio Metropolitano de Seguridad Ciudadana",
+        elem8: "Observatorio Metropolitano de Seguridad Ciudadana 2019",
     },
     Tasa_Homic: {
         title: "Tasa de homicidios",
@@ -429,7 +429,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>12.1 - 23.2</div>',
         elem6: '',
         elem7: '',
-        elem8: "Observatorio Metropolitano de Seguridad Ciudadana",
+        elem8: "Observatorio Metropolitano de Seguridad Ciudadana 2019",
     },
     Shannon: {
         title: "Diversidad usos del suelo",
@@ -441,7 +441,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>0.00 - 0.51</div>',
         elem6: '',
         elem7: '',
-        elem8: "Gobierno de Quito",
+        elem8: "Plan de Uso y Ocupación del Suelo 2020",
     },
     DxP_Comer: {
         title: "Proximidad zonas de interés económico (servicios y comercio)",
@@ -453,7 +453,7 @@ var legends = {
         elem5: '<div><span  style= "color:#d7191c">▉</span>5001 - 7920</div>',
         elem6: '<br />Factor de inclinación del terreno <br />A nivel: 1<br /> Ligeramente inclinada: 1.25<br /> Moderadamente inclinada: 1.5<br /> Fuertemente inclinada: 1.75<br /> Escarpada: 2<br />',
         elem7: '',
-        elem8: "Cámara de Comercio de Quito",
+        elem8: "Licencia Metropolitana Única para el Ejercicio de Actividades Económicas 2020 - LUAE  es el permiso de funcionamiento que otorga el GAD del Distrito Metropolitano de Quito, al desarrollo de actividades económicas en un establecimiento ubicado en el Distrito Metropolitano de Quito.",
     },
     T_DESEMP: {
         title: "Tasa de desempleo",
