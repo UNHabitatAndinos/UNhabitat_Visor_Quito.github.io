@@ -313,7 +313,7 @@ var legends = {
     },
     MIX_TENE: {
         title: "Diversidad tenencia",
-        subtitle: "Índice de Shanon -  Nivel de diversidad por manzana",
+        subtitle: "Índice de Shannon-Wienner -  Nivel de diversidad por manzana",
         elem1: '<div><span  style= "color:#1a9641">▉</span>0.89 - 1.08</div>',
         elem2: '<div><span  style= "color:#a6d96a">▉</span>0.79 - 0.88</div>', 
         elem3: '<div><span  style= "color:#f4f466">▉</span>0.70 - 0.78</div>',
@@ -325,7 +325,7 @@ var legends = {
     },
     MIX_ETNIA: {
         title: "Diversidad etnias y razas",
-        subtitle: "Índice de Shanon -  Nivel de diversidad por manzana",
+        subtitle: "Índice de Shannon-Wienner -  Nivel de diversidad por manzana",
         elem1: '<div><span  style= "color:#1a9641">▉</span>0.51 - 0.82</div>',
         elem2: '<div><span  style= "color:#a6d96a">▉</span>0.38 - 0.50</div>', 
         elem3: '<div><span  style= "color:#f4f466">▉</span>0.28 - 0.37</div>',
@@ -337,7 +337,7 @@ var legends = {
     },
     MIX_EDAD: {
         title: "Diversidad edades",
-        subtitle: "Índice de Shanon -  Nivel de diversidad por manzana",
+        subtitle: "Índice de Shannon-Wienner -  Nivel de diversidad por manzana",
         elem1: '<div><span  style= "color:#1a9641">▉</span>1.47 - 1.65</div>',
         elem2: '<div><span  style= "color:#a6d96a">▉</span>1.39 - 1.46</div>', 
         elem3: '<div><span  style= "color:#f4f466">▉</span>1.30 - 1.38</div>',
@@ -349,7 +349,7 @@ var legends = {
     },
     MIX_EDU: {
         title: "Diversidad nivel educativo",
-        subtitle: "Índice de Shanon -  Nivel de diversidad por manzana",
+        subtitle: "Índice de Shannon-Wienner -  Nivel de diversidad por manzana",
         elem1: '<div><span  style= "color:#1a9641">▉</span>1.15 - 1.35</div>',
         elem2: '<div><span  style= "color:#a6d96a">▉</span>1.06 - 1.14</div>', 
         elem3: '<div><span  style= "color:#f4f466">▉</span>0.98 - 1.05</div>',
@@ -433,7 +433,7 @@ var legends = {
     },
     Shannon: {
         title: "Diversidad usos del suelo",
-        subtitle: "Índice de Shanon -  Nivel de diversidad por manzana", 
+        subtitle: "Índice de Shannon-Wienner -  Nivel de diversidad por manzana",
         elem1: '<div><span  style= "color:#1a9641">▉</span>1.15 - 1.79</div>',
         elem2: '<div><span  style= "color:#a6d96a">▉</span>0.94 - 1.14</div>',
         elem3: '<div><span  style= "color:#f4f466">▉</span>0.75 - 0.93</div>',
