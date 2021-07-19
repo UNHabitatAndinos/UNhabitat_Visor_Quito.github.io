@@ -39,7 +39,7 @@ info.onAdd = function (map) {
 info.update = function (props) {
     this._div.innerHTML = (props ?
         'Parroquia ' + props.PARROQUIA + '<br />' + 
-        'Proyección población 2020 ' + props.Pob2020_Pr.toFixed(0)  + '<br />' +  '<br />' + 
+        'Proyección población ' + props.Pob2020_Pr.toFixed(0)  + ' (año 2020) <br />' +  '<br />' + 
         
         '<b>Vivienda </b>' + '<br />' +
         'Vivienda adecuada: ' + props.MAT_ADE.toFixed(0) + ' %' + '<br />' +
