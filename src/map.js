@@ -75,7 +75,7 @@ info.update = function (props) {
         'Diversidad usos del suelo: ' + props.Shannon.toFixed(2) + '/1.61' +'<br />' + '<br />' +
 
         '<b>Oportunidades económicas </b>' + '<br />' +
-        'Proximidad unidades servicios y comerciales: ' + props.DxP_Comer.toFixed(0) + ' m' + '<br />' +
+        'Proximidad zonas de interés económico (servicios y comercio): ' + props.DxP_Comer.toFixed(0) + ' m' + '<br />' +
         'Desempleo: ' + props.T_DESEMP.toFixed(0) + ' %' + '<br />' +
         'Empleo: ' + props.EMPLEO.toFixed(0) + ' %' + '<br />' +
         'Desempleo juvenil: ' + props.DESEM_JUVE.toFixed(0) + ' %' + '<br />' +
