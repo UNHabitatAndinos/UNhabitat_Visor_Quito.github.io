@@ -69,7 +69,7 @@ info.update = function (props) {
         '<b>Espacios públicos, seguridad y recreación </b>' + '<br />' +
         'Proximidad espacio público: ' + props.DxP_Parqu.toFixed(0) + ' m' + '<br />' +
         'M² per capita de espacio público: ' + props.M2_EP_CA.toFixed(2) + '<br />' +
-        'Densidad poblacional: ' + props.Densid2020.toFixed(2) + '<br />' +
+        'Densidad residencial: ' + props.Densid2020.toFixed(2) + '<br />' +
         'Tasa de hurtos x 100mil habitantes: ' + props.Tasa_Hurto.toFixed(1) + '<br />' +
         'Tasa de homicidios x 100mil habitantes: ' + props.Tasa_Homic.toFixed(1) + '<br />' +
         'Diversidad usos del suelo: ' + props.Shannon.toFixed(2) + '/1.61' +'<br />' + '<br />' +
