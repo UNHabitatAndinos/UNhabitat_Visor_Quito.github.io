@@ -106,7 +106,8 @@ function highlightFeature(e) {
         weight: 5,
         color: 'black',
         dashArray: '',
-        fillColor: false
+        fillOpacity: 0.7,
+        opacity: 0.8
     });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -115,35 +116,6 @@ function highlightFeature(e) {
 
     info.update(layer.feature.properties);
 }
-
-var manzanas;
-
-function resetHighlight(e) {
-    manzanas.resetStyle(e.target);
-    info.update();
-}
-
-function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
-}
-
-function onEachFeature(feature, layer) {
-    layer.on({
-        mouseover: highlightFeature,
-        mouseout: resetHighlight,
-        click: zoomToFeature
-    });
-}
-
-function style(feature) {
-    return {
-        weight: 0.6,
-        opacity: 0.5,
-        color: '#ffffff00',
-        fillOpacity: 0,
-    };
-}
-
 
 function changeLegend(props) {
     var _legend = document.getElementById('legend'); // create a div with a class "info"
@@ -242,11 +214,11 @@ var legends = {
     A_ACU: {
         title: "Acceso a agua mejorada",
         subtitle: "% de Viviendas", 
-        elem1: '<div><span  style= "color:#1a9641">▉</span>99.88 - 100.00</div>',
-        elem2: '<div><span  style= "color:#a6d96a">▉</span>99.43 - 99.87</div>', 
-        elem3: '<div><span  style= "color:#f4f466">▉</span>98.51 - 99.42</div>',
-        elem4: '<div><span  style= "color:#fdae61">▉</span>95.73 - 98.50</div>',
-        elem5: '<div><span  style= "color:#d7191c">▉</span>93.26 - 95.72</div>',
+        elem1: '<div><span  style= "color:#a6d96a">▉</span>99.88 - 100.00</div>',
+        elem2: '<div><span  style= "color:#d4e8c3">▉</span>99.43 - 99.87</div>', 
+        elem3: '<div><span  style= "color:#86ad47">▉</span>98.51 - 99.42</div>',
+        elem4: '<div><span  style= "color:#a5c174">▉</span>95.73 - 98.50</div>',
+        elem5: '<div><span  style= "color:#1a9641">▉</span>93.26 - 95.72</div>',
         elem6: '',
         elem7: '',
         elem8: "INEC - Enemdu 2019",
@@ -266,11 +238,11 @@ var legends = {
     A_ELEC: {
         title: "Acceso a electricidad",
         subtitle: "% de Viviendas", 
-        elem1: '<div><span  style= "color:#1a9641">▉</span>99.60 - 100.00</div>',
-        elem2: '<div><span  style= "color:#a6d96a">▉</span>98.81 - 99.59</div>', 
-        elem3: '<div><span  style= "color:#f4f466">▉</span>97.51 - 99.80</div>',
-        elem4: '<div><span  style= "color:#fdae61">▉</span>95.52 - 97.50</div>',
-        elem5: '<div><span  style= "color:#d7191c">▉</span>92.88 - 95.51</div>',
+        elem1: '<div><span  style= "color:#a6d96a">▉</span>99.60 - 100.00</div>',
+        elem2: '<div><span  style= "color:#d4e8c3">▉</span>98.81 - 99.59</div>', 
+        elem3: '<div><span  style= "color:#86ad47">▉</span>97.51 - 99.80</div>',
+        elem4: '<div><span  style= "color:#a5c174">▉</span>95.52 - 97.50</div>',
+        elem5: '<div><span  style= "color:#1a9641">▉</span>92.88 - 95.51</div>',
         elem6: '',
         elem7: '',
         elem8: "INEC - Enemdu 2019",
@@ -290,11 +262,11 @@ var legends = {
     CON_SOL: {
         title: "Contaminación residuos sólidos",
         subtitle: "% de Viviendas",
-        elem1: '<div><span  style= "color:#1a9641">▉</span>0.00 - 0.24</div>',
-        elem2: '<div><span  style= "color:#a6d96a">▉</span>0.25 - 0.88</div>', 
-        elem3: '<div><span  style= "color:#f4f466">▉</span>0.89 - 1.89</div>',
-        elem4: '<div><span  style= "color:#fdae61">▉</span>1.90 - 3.48</div>',
-        elem5: '<div><span  style= "color:#d7191c">▉</span>3.49 - 6.98</div>',
+        elem1: '<div><span  style= "color:#a6d96a">▉</span>0.00 - 0.24</div>',
+        elem2: '<div><span  style= "color:#d4e8c3">▉</span>0.25 - 0.88</div>', 
+        elem3: '<div><span  style= "color:#86ad47">▉</span>0.89 - 1.89</div>',
+        elem4: '<div><span  style= "color:#a5c174">▉</span>1.90 - 3.48</div>',
+        elem5: '<div><span  style= "color:#1a9641">▉</span>3.49 - 6.98</div>',
         elem6: '',
         elem7: '',
         elem8: "INEC - Enemdu 2019",
@@ -387,10 +359,10 @@ var legends = {
         title: "M² per capita de espacio público",
         subtitle: "m²/habitante",
         elem1: '<div><span  style= "color:#1a9641">▉</span>Mayor 14</div>',
-        elem2: '<div><span  style= "color:#a6d96a">▉</span>11 - 14</div>', 
-        elem3: '<div><span  style= "color:#f4f466">▉</span>5 - 10</div>',
-        elem4: '<div><span  style= "color:#fdae61">▉</span>3 - 4</div>',
-        elem5: '<div><span  style= "color:#d7191c">▉</span>0 - 2</div>',
+        elem2: '<div><span  style= "color:#d7191c">▉</span>0 - 13</div>', 
+        elem3: '',
+        elem4: '',
+        elem5: '',
         elem6: '',
         elem7: '',
         elem8: "Gobierno Abierto de Quito 2020",
@@ -398,11 +370,11 @@ var legends = {
     Densid2020: {
         title: "Densidad residencial",
         subtitle: "Población proyectada año 2020 x hectárea", 
-        elem1: '<div><span  style= "color:#1a9641">▉</span>0 - 146</div>',
-        elem2: '<div><span  style= "color:#a6d96a">▉</span>147 - 353</div>', 
-        elem3: '<div><span  style= "color:#f4f466">▉</span>354 - 645</div>',
-        elem4: '<div><span  style= "color:#fdae61">▉</span>646 - 1830</div>',
-        elem5: '<div><span  style= "color:#d7191c">▉</span>1831 - 4593</div>',
+        elem1: '<div><span  style= "color:#a6d96a">▉</span>0 - 149</div>',
+        elem2: '<div><span  style= "color:#1a9641">▉</span>150 - 200</div>', 
+        elem3: '<div><span  style= "color:#f4f466">▉</span>201 - 500</div>',
+        elem4: '<div><span  style= "color:#fdae61">▉</span>501 - 1000</div>',
+        elem5: '<div><span  style= "color:#d7191c">▉</span>1001 - 4593</div>',
         elem6: '',
         elem7: '',
         elem8: "INEC Censo de Población y Vivienda 2010",
@@ -505,16 +477,32 @@ var legends = {
     },
 }
 
-var indi = L.geoJson(Manzana, {
+var indi;
+
+function resetHighlight(e) {
+    indi.setStyle(fillColor);
+    info.update();
+}
+
+function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+}
+
+function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight,
+        click: zoomToFeature
+    });
+}
+
+indi = L.geoJson(Manzana, {
     style: legends.Densid2020,
-}).addTo(map);
-
-var currentStyle = 'Densid2020';
-
-manzanas = L.geoJson(Manzana, {
-    style: style,
     onEachFeature: onEachFeature
 }).addTo(map);
+
+
+var currentStyle = 'Densid2020';
 
 
 function setProColor(d) {
@@ -560,11 +548,11 @@ function setProColor(d) {
                       '#d7191c';
     }
     else if (currentStyle === 'A_ACU') {
-        return d > 99.87 ? '#1a9641' :
-            d > 99.42 ? '#a6d96a' :
-                d > 98.50 ? '#f4f466' :
-                    d > 95.72 ? '#fdae61' :
-                      '#d7191c';
+        return d > 99.87 ? '#a6d96a'  :
+            d > 99.42 ? '#d4e8c3' :
+                d > 98.50 ? '#86ad47' :
+                    d > 95.72 ? '#a5c174' :
+                      '#1a9641';
     }
     else if (currentStyle === 'A_ALC') {
         return d > 99.87 ? '#1a9641' :
@@ -574,11 +562,11 @@ function setProColor(d) {
                       '#d7191c';
     }
     else if (currentStyle === 'A_ELEC') {
-        return d > 99.59 ? '#1a9641' :
-            d > 98.80 ? '#a6d96a' :
-                d > 97.50 ? '#f4f466' :
-                    d > 95.51 ? '#fdae61' :
-                      '#d7191c';
+        return d > 99.59 ? '#a6d96a' :
+            d > 98.80 ? '#d4e8c3' :
+                d > 97.50 ? '#86ad47' :
+                    d > 95.51 ? '#a5c174' :
+                      '#1a9641';
     }
     else if (currentStyle === 'D_ECONO') {
         return d > 3.5 ? '#d7191c' :
@@ -595,11 +583,11 @@ function setProColor(d) {
                     '#1a9641';
     }
     else if (currentStyle === 'CON_SOL') {
-        return d > 3.48 ? '#d7191c' :
-            d > 1.89 ? '#fdae61' :
-                d > 0.88 ? '#f4f466' :
-                    d > 0.24 ? '#a6d96a' :
-                    '#1a9641';
+        return d > 3.48 ? '#1a9641' :
+            d > 1.89 ? '#a5c174' :
+                d > 0.88 ? '#86ad47' :
+                    d > 0.24 ? '#d4e8c3' :
+                    '#a6d96a';
     }
     else if (currentStyle === 'DxP_Cult') {
         return d > 10000 ? '#d7191c' :
@@ -652,17 +640,14 @@ function setProColor(d) {
     }
     else if (currentStyle === 'M2_EP_CA') {
         return d > 14 ? '#1a9641' :
-            d > 10 ? '#a6d96a' :
-                d > 4 ? '#f4f466' :
-                    d > 2 ? '#fdae61' :
                       '#d7191c';
     }
     else if (currentStyle === 'Densid2020') {
-        return d > 1830 ?  '#d7191c':
-            d > 645 ? '#fdae61' :
-                d > 353 ? '#f4f466' :
-                    d > 146 ? '#a6d96a' :
-                    '#1a9641';
+        return d > 1000 ?  '#d7191c':
+            d > 500 ? '#fdae61' :
+                d > 200 ? '#f4f466' :
+                    d > 149 ? '#1a9641' :
+                    '#a6d96a';
     }
     else if (currentStyle === 'Tasa_Hurto') {
         return d > 2357 ?  '#d7191c':
